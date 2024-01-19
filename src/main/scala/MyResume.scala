@@ -79,7 +79,7 @@ object MyResume {
       jobTitle = "Senior Software Engineer",
       company = LinkOption("F5", Some("https://f5.com")),
       highlights = Seq(
-        "Created a new generic query language for executing queries across a multitude of database technologies",
+        "Created a new generic query language for executing queries across a multitude of database technologies, including Elastic Search, Parquet Data in S3 via Spark, and Kafka Streaming evaluation against Avro Data.",
         "Created a platform for containerizing and deploying any machine learning model",
         "Created a platform to enable internal Subject Matter Experts (SME's) to train their own Large Language Models (LLMs) with minimal data science skills required",
         "Led a complex project rewriting one of the oldest parts of our platform while ensuring no interruption to the existing feature",
