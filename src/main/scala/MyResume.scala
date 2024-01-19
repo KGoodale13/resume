@@ -24,7 +24,7 @@ object MyResume {
     Skill("Python", SkillLevel.Intermediate),
     Skill("Kotlin", SkillLevel.Intermediate),
     Skill("JavaScript", SkillLevel.Beginner),
-    Skill("TypeScript", SkillLevel.Beginner),
+    Skill("Go", SkillLevel.Beginner),
   )
 
   private val technologies = Seq(
@@ -36,6 +36,8 @@ object MyResume {
     Skill("SQL", SkillLevel.Advanced),
     Skill("Postgres", SkillLevel.Advanced),
     Skill("Kafka", SkillLevel.Advanced),
+    Skill("ML Ops", SkillLevel.Advanced),
+    Skill("MLFlow", SkillLevel.Advanced),
     Skill("Functional Programming", SkillLevel.Advanced),
     Skill("ElasticSearch", SkillLevel.Advanced),
     Skill("Amazon Web Services (AWS)", SkillLevel.Intermediate),
@@ -50,10 +52,10 @@ object MyResume {
       highlights = Seq(
         "Developed highly available microservices for various projects. Leveraging functional programming heavily",
         "Developed and maintained a streaming query language for classifying and filtering millions of events per second",
-        "Developed and maintained various high performance streaming applications capable of processing millions of events per second",
+        "Developed and maintained various high-performance streaming applications capable of processing millions of events per second",
         "Developed and maintained a large data platform storing hundreds of terabytes of data",
         "Optimized existing streaming services to cut operating costs by over half",
-        "Received many awards for performance",
+        "Received numerous awards for performance",
         "Developed tools for identifying performance bottlenecks and application failures",
       ),
       skillsUsed = Seq(
@@ -62,8 +64,10 @@ object MyResume {
         "Functional Programming",
         "Finch/Finagle (Twitter Stack)",
         "SQL",
+        "Parquet",
         "Postgres",
-        "ElasticSearch",
+        "Elastic Search",
+        "Kafka",
         "Parquet",
         "Hive",
         "Spark",
@@ -75,9 +79,11 @@ object MyResume {
       jobTitle = "Senior Software Engineer",
       company = LinkOption("F5", Some("https://f5.com")),
       highlights = Seq(
-        "Created a new generic query language for executing queries across multiple data stores",
+        "Created a new generic query language for executing queries across a multitude of database technologies",
         "Created a platform for containerizing and deploying any machine learning model",
+        "Created a platform to enable internal Subject Matter Experts (SME's) to train their own Large Language Models (LLMs) with minimal data science skills required",
         "Led a complex project rewriting one of the oldest parts of our platform while ensuring no interruption to the existing feature",
+        "Gained experience as a team lead architecting, coordinating, and communicating feature development across teams"
       ),
       skillsUsed = Seq(
         "Scala",
@@ -99,7 +105,7 @@ object MyResume {
 
   val resume = Resume(
     aboutMe =
-      "Senior Software Engineer specializing in high performance data streaming, distributed computing, and language parsing. Enjoys solving complex problems and learning new technologies. Functional programming enthusiast.",
+      "Senior Software Engineer specializing in high-performance data streaming, distributed computing, and language parsing. Enjoys solving complex problems and learning new technologies. Functional programming enthusiast. Experienced in running large-scale reliable data processing platforms, microservice development, and machine learning operations (MLOps).",
     contactInfo = contact,
     links = socialLinks,
     education = Education(

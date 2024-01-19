@@ -9,7 +9,7 @@ object StandardStyle extends StyleSheet.Inline {
 
   private val helveticaFont = fontFace("helvetica")(_.src("local(Helvetica)"))
 
-  val name = style(fontSize(18 pt), textAlign.center, fontFamily(georgiaFont))
+  val name = style(fontSize(32 pt), textAlign.center, fontFamily(georgiaFont))
 
   val contactInfo =
     style(fontSize(10 pt), textAlign.center, fontFamily(georgiaFont))
@@ -30,7 +30,7 @@ object StandardStyle extends StyleSheet.Inline {
   val subheadingLeft = style(float.left, overflow.hidden, fontWeight._700)
   val subheadingRight = style(float.right)
 
-  val body = style(fontSize(11 pt), textAlign.left, fontFamily(helveticaFont))
+  val body = style(fontSize(11 pt), textAlign.left, fontFamily(helveticaFont), lineHeight(1.2))
 
   val list = style(marginTop(0 px))
 

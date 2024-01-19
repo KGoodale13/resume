@@ -76,7 +76,7 @@ object Standard extends ResumeTemplate {
       {resume.skills.map {
         case (category, skills) =>
         <div>
-          <b>{category}:</b><br></br>
+          <b>{category}:</b>
           <ul class={StandardStyle.list.htmlClass}>
             {skills.sortBy(_.level.rank)(Ordering.Int.reverse).flatMap(s => List(<li>{s.name} <i>({s.level})</i></li>))}
           </ul>
@@ -115,9 +115,10 @@ object Standard extends ResumeTemplate {
         <hr/>
         {profile}
         <hr/>
+        {experience}
+        <hr/>
         {skills}
         <hr/>
-        {experience}
         {educationSection}
       </body>
     </html>
